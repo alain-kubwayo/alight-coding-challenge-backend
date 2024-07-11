@@ -1,0 +1,41 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Simple custom Google search API that simulates functionality of the Google search engine",
+    "title": "Simple custom Google search API"
+  },
+  "tags": [
+    {
+      "name": "Search",
+      "description": "Search related functionality"
+    }
+  ],
+  "schemes": ["http", "https"],
+  "paths": {
+    "/search": {
+      "get": {
+        "tags": ["Search"],
+        "summary": "Get search results based on the query",
+        "description": "",
+        "consumes": ["application/json", "application/xml"],
+        "produces": ["application/json", "application/xml"],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "query",
+            "description": "Search query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  }
+}
