@@ -22,7 +22,7 @@
         "parameters": [
           {
             "in": "query",
-            "name": "query",
+            "name": "q",
             "description": "Search query",
             "required": true,
             "schema": {
