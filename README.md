@@ -4,3 +4,4 @@ This is a simple Node.js/Express server that serves the search results from the 
 
 Check out the documentation at https://alight-coding-challenge-backend.onrender.com/api-docs/
 
+
